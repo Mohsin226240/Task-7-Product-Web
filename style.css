@@ -1,0 +1,288 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1a73e8;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text-left {
+  flex: 1 1 40%;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 18px 40px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px rgba(26, 115, 232, 0.2);
+  transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #155ab6;
+  transform: translateY(-2px);
+}
+
+.hero-text-right {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.hero-smartwatch-img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero-title {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Features */
+.features {
+  background-color: #f1f5ff;
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a73e8;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-box {
+  background-color: #fff;
+  padding: 30px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.testimonial-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #f5b50a;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Pricing */
+.pricing {
+  padding: 80px 0;
+  background-color: #eaf0ff;
+}
+
+.price-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.price-box h3 {
+  font-size: 2rem;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+.price-box .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.price-box .btn:hover {
+  background-color: #155ab6;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f5ff;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.back-to-top {
+  display: block;
+  margin-top: 10px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Smooth Scroll + Scroll Animations (CSS Only) */
+.animate-on-load {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feature-grid,
+  .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
